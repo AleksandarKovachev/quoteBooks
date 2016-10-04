@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer_labels">
+        <item>Home</item>
+        <item>Books</item>
+        <item>Quote</item>
+        <item>Login</item>
+        <item>Register</item>
+    </string-array>
+
+</resources>

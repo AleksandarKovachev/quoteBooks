@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="@string/menu_share" />
+
+    <item
+        android:id="@+id/action_favorite"
+        android:orderInCategory="101"
+        android:title="@string/menu_favorite" />
+
+    <item
+        android:id="@+id/buyDownload"
+        android:orderInCategory="102"
+        android:title="@string/buyDownload" />
+</menu>

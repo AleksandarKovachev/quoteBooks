@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_quotes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Quotes" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Login" />
+            <item
+                android:id="@+id/nav_register"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Register" />
+        </menu>
+    </item>
+
+</menu>

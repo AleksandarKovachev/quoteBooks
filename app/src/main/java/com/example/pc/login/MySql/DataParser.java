@@ -11,6 +11,7 @@ import com.example.pc.login.Adapter.QuoteAdapter;
 import com.example.pc.login.Books.Book;
 import com.example.pc.login.Quote.Quote;
 import com.example.pc.login.R;
+import com.example.pc.login.SQL.DBPref;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -84,6 +85,10 @@ public class DataParser extends AsyncTask<Void, Void, Boolean> {
                     String quoteDb = jo.getString("quote");
                     String author = jo.getString("author");
                     String imageUrl = jo.getString("imageurl");
+
+                    DBPref pref = new DBPref(c);
+                    pref.addRecord(quoteDb, author);
+
                     quote = new Quote();
                     quote.setQuote(quoteDb);
                     quote.setAuthor(author);

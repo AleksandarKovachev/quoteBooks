@@ -11,6 +11,8 @@ public class PicassoClient {
     public static void downloadImage(Context c, String imageUrl, ImageView img) {
         if (imageUrl.length() > 0 && imageUrl != null) {
             Picasso.with(c).load(imageUrl).placeholder(R.mipmap.placeholder).into(img);
+        } else if (imageUrl.equals("nqma")){
+            Picasso.with(c).load(R.mipmap.placeholder).into(img);
         } else {
             Picasso.with(c).load(R.mipmap.placeholder).into(img);
         }

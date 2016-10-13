@@ -48,6 +48,7 @@ public class QuoteAdapter extends RecyclerView.Adapter<QuoteAdapter.MyViewHolder
         holder.twQuote.setText(quote.getQuote());
         holder.twAuthor.setText(quote.getAuthor());
 
+
         PicassoClient.downloadImage(context, quote.getImageUrl(), holder.img);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +101,7 @@ public class QuoteAdapter extends RecyclerView.Adapter<QuoteAdapter.MyViewHolder
 
     class MyMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {
         String quote;
+
         public MyMenuItemClickListener(String quote) {
             this.quote = quote;
         }
